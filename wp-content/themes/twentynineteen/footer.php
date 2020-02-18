@@ -47,17 +47,17 @@
         <div class="foot-col">
             <h6>Legal</h6>
             <ul class="foot-link-block">
-                <li><a href="/mega-plus/www/privacy.php" class="foot-link" title="Privacy Policy  ">Privacy Policy  </a></li>
-                <li><a href="/mega-plus/www/tmc.php" class="foot-link" title="Terms of Use">Terms of Use</a></li>
+                <li><a href="?page_id=22" class="foot-link" title="Privacy Policy  ">Privacy Policy  </a></li>
+                <li><a href="?page_id=28" class="foot-link" title="Terms of Use">Terms of Use</a></li>
                 <li><a href="?page_id=14" class="foot-link" title="License and Agreement">License and Agreement</a></li>
             </ul>    
         </div>
         <div class="foot-col">
             <h6>Products</h6>
             <ul class="foot-link-block">
-                <li><a href="" class="foot-link" title="Services ">Services </a></li>
-                <li><a href="" class="foot-link" title="Pricing">Pricing</a></li>
-                <li><a href="" class="foot-link" title="Mag Plus Pro">Mag Plus Pro</a></li>
+                <li><a href="?page_id=5" class="foot-link" title="Services ">Services </a></li>
+                <li><a href="?page_id=20" class="foot-link" title="Pricing">Pricing</a></li>
+                <li><a href="?page_id=17" class="foot-link" title="Mag Plus Pro">Mag Plus Pro</a></li>
             </ul>    
         </div>
         <div class="foot-col">

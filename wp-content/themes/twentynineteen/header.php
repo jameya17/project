@@ -24,7 +24,7 @@
 <header class="header">
     <div class="header-wrap">
         <div class="header-pad clearfix">
-            <a class="logo" href="/">
+            <a class="logo" href="?page_id=25">
                 <img class="logo" src="<?php bloginfo('template_directory'); ?>/images/logo.svg" alt="Megaplus Logo" title="Megaplus Logo">
             </a>
 
