@@ -4,6 +4,9 @@
 }
 .grey-bg{
     background-color: #F7F7F7;   
+    @media only screen and (max-width: 1024px) {
+        background-color: transparent; 
+    }
 }
 .org-bg{
     background-color: #FF8616; 
@@ -27,9 +30,12 @@
 }
 .l-sub-section-pad{
     padding: 0 60px;
+    @media only screen and (max-width: 1024px) {
+        padding: 0; 
+    }
 }
 .small-wrap{
-    max-width: 600px;
+    max-width: 700px; 
     margin: 0 auto;
 }
 .g-col{
@@ -65,9 +71,16 @@
     width: 48%;
     @media only screen and (max-width: 1024px) {
         width: 100%;
-        margin-bottom: 30px;
+        // margin-bottom: 30px;
         &:last-child{
-            margin-bottom: 0px;
+            @media only screen and (min-width: 1025px) {
+                margin-bottom: 0px;
+            }
+        }
+    }
+    .image-block    {
+        @media only screen and (max-width: 1024px) {
+            margin-bottom: 30px;  
         }
     }
 }
@@ -89,13 +102,22 @@
 .align-center{
     @include flex-direction(column);
     @include justify-content(center);
+    @media only screen and (max-width: 1024px) {
+        display: block;
+    }
 }
 .align-right{
     @include justify-content(flex-end);
+    @media only screen and (max-width: 1024px) {
+        display: block;
+    }
 }
 .align-top{
     @include justify-content(flex-start);
     @include align-items(flex-start); 
+    @media only screen and (max-width: 1024px) {
+        display: block;
+    }
 }
 .container{
     padding-top: 68px;
@@ -108,7 +130,7 @@
     @include align-items(center);
     padding: 160px 0;
     @media only screen and (max-width: 1024px) {
-        padding: 40px 0;
+        padding: 30px 0;
     }
     p{
         margin-bottom: 20px;
@@ -158,4 +180,55 @@
 .key-offerings{
     padding-top: 0; 
     padding-bottom: 100px; 
+    @media only screen and (max-width: 1024px) {
+        padding: 0; 
+    }
+}
+.casestudiesPg{
+    .tab-section{
+        margin-top: 55px; 
+    }
+    h3.sec-title{
+        font-size: 32px;
+        line-height: 44.07px;
+        color: #414141;
+        letter-spacing: -0.7px; 
+    }
+    p{
+        font-size: 17px;
+        line-height: 30px;
+        letter-spacing: 0.76px;
+        color: #6B6D70; 
+        &.block-ellipsis{
+            height: 90px;
+        }
+    }
+    .case-studies-listing{
+        .g-col{
+            border-bottom: 1px solid #6B6A6A; 
+            padding-bottom: 70px;
+            margin-bottom: 70px; 
+            &:last-child{
+                border-bottom: 0; 
+                padding-bottom: 0;
+                margin-bottom: 0;  
+            }
+        }
+        .image-block{
+            display: block; 
+        }
+        .text-link{
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 4.35px;
+            color: $org-col; 
+            font-weight: 500; 
+        }
+    }
+}
+.case-studies-foot{
+    position: relative;
+    display: flex-box;
+    margin-top: 75px; 
+
 }
