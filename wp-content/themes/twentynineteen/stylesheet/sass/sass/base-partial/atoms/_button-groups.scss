@@ -11,7 +11,7 @@
     cursor: pointer;
     white-space: nowrap;
     letter-spacing: 1.4px;
-    text-transform: uppercase;  
+    text-transform: uppercase;
     text-decoration: none;
     &:hover{
         color: $org-col;
@@ -142,6 +142,9 @@
 .primary-btn{
     position: relative;
     height: 52px; 
+    @media only screen and (max-width: 1024px) {
+        height: auto;
+    }
     span{
         @extend .btn;
         display: inline-block;
@@ -155,10 +158,23 @@
     .span1{
         background-color: $org-col;
         border-color: $org-col; 
+        @media only screen and (max-width: 1024px) {
+            display: none;
+        }
     }
     .span2{
         opacity: 0;
         background-color: $dark-org-col;
+        @media only screen and (max-width: 1024px) {
+            display: none;
+        }
+    }
+    .span3{
+        display: none;
+        @media only screen and (max-width: 1024px) {
+            position: static; 
+            display: inline-block;
+        }
     }
     &:hover{
         .span1{
